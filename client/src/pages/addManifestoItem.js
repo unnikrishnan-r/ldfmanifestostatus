@@ -18,6 +18,7 @@ const STATUS_LIST = [
   { value: "TO BE STARTED", label: "To Be Started" }
 ];
 
+console.log(STATUS_LIST)
 class Manifesto extends Component {
   state = {
     manifestoItems: [],
