@@ -9,6 +9,7 @@ function App() {
     <Router>
       <div>
         <Nav />
+        <AddMainestoItem />
         <Switch>
           <Route exact path="/addmainfestoitem" component={AddMainestoItem} />
         </Switch>
