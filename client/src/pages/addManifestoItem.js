@@ -68,17 +68,17 @@ class Manifesto extends Component {
     console.log(this.state.remainingCharCountTitle, "left");
   };
 
-  handleInputChangeTest = (state, value) => {
-    // const { name, value } = event.target;
+  // handleInputChangeTest = (state, value) => {
+  //   // const { name, value } = event.target;
 
-    this.setState((state, value) => {
-      console.log(state)
-      // console.log(Object.keys(props))
-      console.log(value)
+  //   this.setState((state, value) => {
+  //     console.log(state)
+  //     // console.log(Object.keys(props))
+  //     console.log(value)
 
-      // const { name, value } = event.target;
-    });
-  };
+  //     // const { name, value } = event.target;
+  //   });
+  // };
 
   handleStatusChange = selectedOption => {
     console.log(
@@ -135,7 +135,7 @@ class Manifesto extends Component {
                 placeholder="Enter the title of the manifesto item"
               />
               <RemainingChar
-                remainingCharCount={this.state.remainingCharCountTitle}
+                remainingCharCount={100 - this.state.manifestoHeader.title.length}
               ></RemainingChar>
               <TextArea
                 value={this.state.manifestoHeader.description}
